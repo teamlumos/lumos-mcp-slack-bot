@@ -1,0 +1,28 @@
+{
+  "name": "lumos-mcp-slack-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Demo Slack bot that talks to the Lumos user MCP server using API key (Bearer) auth",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "serve": "tsx src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "start:dist": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.65.0",
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "@slack/bolt": "^4.1.0",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
